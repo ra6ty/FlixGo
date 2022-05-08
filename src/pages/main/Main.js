@@ -1,12 +1,15 @@
 import React from 'react';
-import "Main.scss"
-
+import "./Main.scss"
 
 const Main = () => {
-    console.log("11")
     return (
         <div>
+            <header>
+                <a href="#"><img src="./images/logo.svg" alt="#"/></a>
+                <div>
 
+                </div>
+            </header>
         </div>
     );
 };
