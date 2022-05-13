@@ -24,60 +24,60 @@ const Catalog = () => {
                             <div className="col-6 col-sm-4 col-lg-3 col-xl-2">
                                 <div className="card">
                                     <div className="cover">
-                                        <img src="./images/cover.jpg" alt="#"/>
+                                        <img src="./images/cover.jpg" alt="test612"/>
                                     </div>
                                     <div className="content">
-                                        <a href="#">Name of film  (3000)</a>
+                                        <a href="test6">Name of film  (3000)</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-6 col-sm-4 col-lg-3 col-xl-2">
                                 <div className="card">
                                     <div className="cover">
-                                        <img src="./images/cover.jpg" alt="#"/>
+                                        <img src="./images/cover.jpg" alt="test612"/>
                                     </div>
                                     <div className="content">
-                                        <a href="#">Name of film  (3000)</a>
+                                        <a href="test7">Name of film  (3000)</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-6 col-sm-4 col-lg-3 col-xl-2">
                                 <div className="card">
                                     <div className="cover">
-                                        <img src="./images/cover.jpg" alt="#"/>
+                                        <img src="./images/cover.jpg" alt="test612"/>
                                     </div>
                                     <div className="content">
-                                        <a href="#">Name of film  (3000)</a>
+                                        <a href="test612">Name of film  (3000)</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-6 col-sm-4 col-lg-3 col-xl-2">
                                 <div className="card">
                                     <div className="cover">
-                                        <img src="./images/cover.jpg" alt="#"/>
+                                        <img src="./images/cover.jpg" alt="test612"/>
                                     </div>
                                     <div className="content">
-                                        <a href="#">Name of film  (3000)</a>
+                                        <a href="test612">Name of film  (3000)</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-6 col-sm-4 col-lg-3 col-xl-2">
                                 <div className="card">
                                     <div className="cover">
-                                        <img src="./images/cover.jpg" alt="#"/>
+                                        <img src="./images/cover.jpg" alt="test612"/>
                                     </div>
                                     <div className="content">
-                                        <a href="#">Name of film  (3000)</a>
+                                        <a href="test612">Name of film  (3000)</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-6 col-sm-4 col-lg-3 col-xl-2">
                                 <div className="card">
                                     <div className="cover">
-                                        <img src="./images/cover.jpg" alt="#"/>
+                                        <img src="./images/cover.jpg" alt="test612"/>
                                     </div>
                                     <div className="content">
-                                        <a href="#">Name of film  (3000)</a>
+                                        <a href="test612">Name of film  (3000)</a>
                                     </div>
                                 </div>
                             </div>

@@ -19,7 +19,7 @@ const Main = () => {
                         <div className="card">
                             <div className="row">
                                 <div className="col-sm-12 col-xl-6">
-                                    <img src="./images/1p.jpg" alt="#"/>
+                                    <img src="./images/1p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
                                     <h3>Втеча з Шоушенка</h3>
@@ -36,7 +36,7 @@ const Main = () => {
                         <div className="card">
                             <div className="row">
                                 <div className="col-sm-12 col-xl-6">
-                                    <img src="./images/2p.webp" alt="#"/>
+                                    <img src="./images/2p.webp" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
                                     <h3>Хрещений батько</h3>
@@ -57,7 +57,7 @@ const Main = () => {
                         <div className="card">
                             <div className="row">
                                 <div className="col-sm-12 col-xl-6">
-                                    <img src="./images/3p_.jpg" alt="#"/>
+                                    <img src="./images/3p_.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
                                     <h3>Список Шиндлера</h3>
@@ -74,7 +74,7 @@ const Main = () => {
                         <div className="card">
                             <div className="row">
                                 <div className="col-sm-12 col-xl-6">
-                                    <img src="./images/4p.jpg" alt="#"/>
+                                    <img src="./images/4p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
                                     <h3>Кримінальне чтиво</h3>
@@ -91,7 +91,7 @@ const Main = () => {
                         <div className="card">
                             <div className="row">
                                 <div className="col-sm-12 col-xl-6">
-                                    <img src="./images/5p.jpg" alt="#"/>
+                                    <img src="./images/5p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
                                     <h3>Володар перснів: Хранителі Персня</h3>
@@ -107,7 +107,7 @@ const Main = () => {
                         <div className="card">
                             <div className="row">
                                 <div className="col-sm-12 col-xl-6">
-                                    <img src="./images/6p.jpg" alt="#"/>
+                                    <img src="./images/6p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
                                     <h3>Бійцівський клуб</h3>
@@ -130,7 +130,7 @@ const Main = () => {
                         <div className="card">
                             <div className="row">
                                 <div className="col-sm-12 col-xl-6">
-                                    <img src="./images/7p.jpg" alt="#"/>
+                                    <img src="./images/7p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
                                     <h3>Форрест Ґамп</h3>
@@ -150,7 +150,7 @@ const Main = () => {
                         <div className="card">
                             <div className="row">
                                 <div className="col-sm-12 col-xl-6">
-                                    <img src="./images/8p.jpg" alt="#"/>
+                                    <img src="./images/8p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
                                     <h3>Початок</h3>
@@ -168,7 +168,7 @@ const Main = () => {
                         <div className="card">
                             <div className="row">
                                 <div className="col-sm-12 col-xl-6">
-                                    <img src="./images/9p.webp" alt="#"/>
+                                    <img src="./images/9p.webp" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
                                     <h3>Матриця</h3>
@@ -184,7 +184,7 @@ const Main = () => {
                         <div className="card">
                             <div className="row">
                                 <div className="col-sm-12 col-xl-6">
-                                    <img src="./images/10p.jpg" alt="#"/>
+                                    <img src="./images/10p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
                                     <h3>Паразити</h3>
@@ -210,32 +210,32 @@ const Main = () => {
                             нових сміливих починань і взаємин, які допоможуть вдосконалити досвід наших клієнтів.</p>
                     </div>
                     <div className="col-6 col-sm-2 col-md-3 col-lg-2">
-                        <a href="#" className="partner">
+                        <a href="test5" className="partner">
                             <img src="./images/themeforest-light-background.png" alt="" className="partner__img"/>
                         </a>
                     </div>
                     <div className="col-6 col-sm-2 col-md-3 col-lg-2">
-                        <a href="#" className="partner">
+                        <a href="test699" className="partner">
                             <img src="./images/audiojungle-light-background.png" alt="" className="partner__img"/>
                         </a>
                     </div>
                     <div className="col-6 col-sm-2 col-md-3 col-lg-2">
-                        <a href="#" className="partner">
+                        <a href="test61test66" className="partner">
                             <img src="./images/codecanyon-light-background.png" alt="" className="partner__img"/>
                         </a>
                     </div>
                     <div className="col-6 col-sm-2 col-md-3 col-lg-2">
-                        <a href="#" className="partner">
+                        <a href="test64" className="partner">
                             <img src="./images/photodune-light-background.png" alt="" className="partner__img"/>
                         </a>
                     </div>
                     <div className="col-6 col-sm-2 col-md-3 col-lg-2">
-                        <a href="#" className="partner">
+                        <a href="test61" className="partner">
                             <img src="./images/activeden-light-background.png" alt="" className="partner__img"/>
                         </a>
                     </div>
                     <div className="col-6 col-sm-2 col-md-3 col-lg-2">
-                        <a href="#" className="partner">
+                        <a href="test62" className="partner">
                             <img src="./images/3docean-light-background.png" alt="" className="partner__img"/>
                         </a>
                     </div>

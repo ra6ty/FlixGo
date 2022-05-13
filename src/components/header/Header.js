@@ -6,7 +6,7 @@ import "./Header.scss"
 const Header = () => {
     return (
         <header>
-            <a className="logo" href="#"><img src="./images/logo.svg" alt="#"/></a>
+            <a className="logo" href="test3"><img src="./images/logo.svg" alt="#"/></a>
             <div className="menu">
                 <Link to={`/`} className='link' type="button">ГОЛОВНА</Link>
                 <Link to={`/catalog`} className='link' type="button">КАТАЛОГ</Link>
