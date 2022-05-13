@@ -1,0 +1,45 @@
+main {
+  margin-top: 6.3rem;
+  color: white;
+
+  & h4 {
+    color: #ff55a5;
+    padding: 2rem 4rem;
+    font-weight: 300;
+    background-color: #2B2B31;
+
+    border-top: 3px solid #ff55a5;
+    margin: 0;
+  }
+
+  & section {
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 2rem 4rem;
+    background-color: #2B2B31;
+
+  }
+  & .input {
+    border-bottom: 3px solid #ff55a5;
+  }
+
+  & .container {
+    & .cover img {
+      width: 100%;
+      height: auto;
+    }
+
+    & .content {
+      margin: 1rem 0;
+      & a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        &:hover {
+          color: #ff55a5;
+        }
+      }
+    }
+  }
+
+}

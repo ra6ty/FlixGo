@@ -1,0 +1,61 @@
+footer {
+  background-color: #28282d;
+  display: block;
+  overflow: hidden;
+  padding: 1rem 4rem;
+  -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.3);
+
+  & .title {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    max-width: 250px;
+  }
+
+  & .list {
+    padding: 0 !important;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    list-style: none;
+    background-color: #28282d;
+
+    & img {
+      max-width: 120px;
+      margin-bottom: 0.5rem;
+    }
+
+    & li {
+      margin: 1rem 0;
+    }
+
+    & a {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+
+      &:hover {
+        color: #ff55a5;
+      }
+    }
+  }
+
+  & .social {
+    padding: 0;
+    display: flex;
+    list-style: none;
+
+    & li {
+      margin: 0 0.5rem;
+    }
+
+    & .instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+      border-radius: 30px;
+    }
+
+    & .linkedin {
+      background-color: white;
+      border-radius: 30px;
+    }
+  }
+}
