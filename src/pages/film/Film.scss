@@ -1,0 +1,42 @@
+main {
+  margin-top: 6rem;
+
+  & .card {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    & h5 {
+      font-size: 40px;
+    }
+
+    & .wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    & .star {
+      margin: 0 0.6rem 0 0;
+      font-size: 28px;
+    }
+    & .meta {
+      list-style: none;
+      padding: 0;
+      & li {
+        font-size: 20px;
+        font-weight: 300;
+        margin: 0.2rem 0;
+        & span {
+          font-weight: 400;
+          font-size: 25px;
+        }
+      }
+    }
+    & .description {
+      font-size: 21px;
+    }
+
+  }
+}

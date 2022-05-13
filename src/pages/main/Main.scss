@@ -1,0 +1,58 @@
+main {
+  margin-top: 6rem;
+
+  & section {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 4rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  & .card {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+  }
+
+  & .col-sm-12 {
+    margin: 1rem 0;
+  }
+
+  & h1 {
+    color: #ffffff;
+    padding: 2rem 4rem;
+    font-weight: 300;
+    background: linear-gradient(to right, #0a0a0a, #d04255);;
+    margin-bottom: 1rem;
+    & span {
+      font-weight: bold;
+    }
+  }
+
+  & .partners {
+    border-top: 5px solid #ff55a5;
+    border-bottom: 5px solid #ff55a5;
+    & h2 {
+      font-size: 36px;
+      font-weight: 400;
+      margin: 1rem 0;
+      color: white;
+    }
+
+    & p {
+      font-weight: 400;
+      color: white;
+      font-size: 20px;
+    }
+
+    & .partner img {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+}
