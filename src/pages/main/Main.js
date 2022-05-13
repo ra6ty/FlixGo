@@ -5,7 +5,7 @@ import Footer from "../../components/footer/Footer";
 
 const Main = () => {
 
-    const style = {
+    const mainStyle = {
         background: "linear-gradient( rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8) ), url(./images/bg.jpg)"
     };
 
@@ -124,7 +124,7 @@ const Main = () => {
                     </div>
                 </div>
             </section>
-            <section style={style}>
+            <section style={mainStyle}>
                 <div className="row">
                     <div className="col-sm-12 col-md-6">
                         <div className="card">

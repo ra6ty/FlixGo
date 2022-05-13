@@ -6,7 +6,7 @@ import FormInput from "../../components/formInput/FormInput";
 
 const Catalog = () => {
 
-    const style2 = {
+    const catalogStyle = {
         background: "linear-gradient( rgba(255, 255, 255, 0.01),rgba(0, 0, 0, 0.7) ), url(./images/bg.jpg)"
     };
 
@@ -15,7 +15,7 @@ const Catalog = () => {
             <Header/>
             <main>
                 <h4>КАТАЛОГ</h4>
-                <section style={style2} className="input">
+                <section style={catalogStyle} className="input">
                     <FormInput/>
                 </section>
                 <section>
