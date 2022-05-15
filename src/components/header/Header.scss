@@ -11,7 +11,8 @@ header {
   right: 0;
   background-color: #2b2b31;
   z-index: 101;
-  box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.3);
+
   & .logo {
     display: flex;
     justify-content: center;
@@ -93,5 +94,30 @@ header {
         background-color: transparent;
       }
     }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  header .menu .link {
+    margin: 0.4rem 0.4rem;
+    font-size: 15px;
+  }
+  header {
+    padding: 0.4rem 2rem !important;
+  }
+  header .logo {
+    height: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  header .menu .link {
+    margin: 0 1rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  header .menu .link {
+    font-size: 25px;
   }
 }

@@ -37,6 +37,17 @@ main {
     & .description {
       font-size: 21px;
     }
+  }
+}
 
+@media (min-width: 320px) and (max-width: 767px) {
+  main .card .meta li {
+    font-size: 15px;
+    & span {
+      font-size: 19px;
+    }
+  }
+  main .card .description {
+    font-size: 15px;
   }
 }
