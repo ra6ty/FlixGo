@@ -56,3 +56,46 @@ main {
     }
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  main {
+    margin-top: 8.4rem !important;
+    & h1 {
+      padding: 1rem 2rem;
+      margin: 0;
+    }
+    & section {
+      padding: 1rem 2rem !important;
+    }
+  }
+  main .col-sm-12 {
+    margin: 0.4rem 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1500px) {
+  main {
+    & section {
+      padding: 1rem 2rem !important;
+    }
+  }
+  main .col-sm-12 {
+    margin: 0.4rem 0;
+  }
+  h3 {
+    margin: 0;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1500px){
+  main {
+    & section {
+      padding: 1rem 2rem !important;
+    }
+  }
+  main .col-sm-12 {
+    margin: 0.4rem 0;
+  }
+}

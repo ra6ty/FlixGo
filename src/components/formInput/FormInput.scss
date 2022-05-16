@@ -30,3 +30,11 @@
     align-items: center;
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .form .button {
+    padding: 0 20px;
+  }
+  .form input {
+    padding: 15px 30px 15px 15px;
+  }
+}

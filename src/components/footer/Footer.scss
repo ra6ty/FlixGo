@@ -1,38 +1,41 @@
 footer {
+  padding: 2rem 4rem;
   background-color: #28282d;
-  display: block;
   width: 100%;
   overflow: hidden;
-  padding: 1rem 4rem;
   -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.3);
 
+  & div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   & .title {
     color: #fff;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 500;
     max-width: 250px;
+    margin: 0;
   }
 
   & .list {
     padding: 0 !important;
-    font-size: 14px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.5);
     list-style: none;
     background-color: #28282d;
-
-    & img {
-      max-width: 120px;
-      margin-bottom: 0.5rem;
-    }
-
-    & li {
-      margin: 1rem 0;
-    }
+    display: flex;
+    align-items: center;
+    margin: 0;
 
     & a {
       color: rgba(255, 255, 255, 0.5);
       text-decoration: none;
+      max-height: 30px;
+      margin: 2rem;
 
       &:hover {
         color: #ff55a5;
@@ -44,9 +47,11 @@ footer {
     padding: 0;
     display: flex;
     list-style: none;
+    margin: 0;
 
     & li {
       margin: 0 0.5rem;
+      max-height: 30px;
     }
 
     & .instagram {
@@ -58,5 +63,28 @@ footer {
       background-color: white;
       border-radius: 30px;
     }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  footer div {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .list {
+    flex-direction: column;
+    margin: 0.5rem 0;
+  }
+  footer {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  footer {
+    padding: 1rem 2rem;
+  }
+  footer .list a {
+    margin: 1rem;
   }
 }
