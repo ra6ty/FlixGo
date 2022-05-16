@@ -1,10 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import "./Catalog.scss"
 import FormInput from "../../components/formInput/FormInput";
 
 const Catalog = () => {
+    const [inputVal, setInputVal] = useState("")
+
+
+
+    const searchFilm = () => {
+        console.log(inputVal)
+    }
+
+
+
 
     const catalogStyle = {
         background: "linear-gradient( rgba(255, 255, 255, 0.01),rgba(0, 0, 0, 0.7) ), url(./images/bg.jpg)"
@@ -16,7 +26,7 @@ const Catalog = () => {
             <main>
                 <h4>КАТАЛОГ</h4>
                 <section style={catalogStyle} className="input">
-                    <FormInput/>
+                    <FormInput searchFilm={searchFilm} inputVal={inputVal} setInputVal={setInputVal}/>
                 </section>
                 <section>
                     <div className="container">
@@ -27,7 +37,7 @@ const Catalog = () => {
                                         <img src="./images/cover.jpg" alt="test612"/>
                                     </div>
                                     <div className="content">
-                                        <a href="test6">Name of film  (3000)</a>
+                                        <a href="test6">Name of film (3000)</a>
                                     </div>
                                 </div>
                             </div>
@@ -37,7 +47,7 @@ const Catalog = () => {
                                         <img src="./images/cover.jpg" alt="test612"/>
                                     </div>
                                     <div className="content">
-                                        <a href="test7">Name of film  (3000)</a>
+                                        <a href="test7">Name of film (3000)</a>
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +57,7 @@ const Catalog = () => {
                                         <img src="./images/cover.jpg" alt="test612"/>
                                     </div>
                                     <div className="content">
-                                        <a href="test612">Name of film  (3000)</a>
+                                        <a href="test612">Name of film (3000)</a>
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +67,7 @@ const Catalog = () => {
                                         <img src="./images/cover.jpg" alt="test612"/>
                                     </div>
                                     <div className="content">
-                                        <a href="test612">Name of film  (3000)</a>
+                                        <a href="test612">Name of film (3000)</a>
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +77,7 @@ const Catalog = () => {
                                         <img src="./images/cover.jpg" alt="test612"/>
                                     </div>
                                     <div className="content">
-                                        <a href="test612">Name of film  (3000)</a>
+                                        <a href="test612">Name of film (3000)</a>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +87,7 @@ const Catalog = () => {
                                         <img src="./images/cover.jpg" alt="test612"/>
                                     </div>
                                     <div className="content">
-                                        <a href="test612">Name of film  (3000)</a>
+                                        <a href="test612">Name of film (3000)</a>
                                     </div>
                                 </div>
                             </div>
