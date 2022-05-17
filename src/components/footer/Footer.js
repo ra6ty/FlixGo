@@ -1,12 +1,16 @@
 import React from 'react';
 import {Facebook, Instagram, Linkedin, Twitter} from "react-bootstrap-icons";
 import "./Footer.scss"
+import {useTranslation} from "react-i18next";
 
 const Footer = () => {
+
+    const {t} = useTranslation()
+
     return (
         <footer>
             <div>
-                <h6 className="title">Contact</h6>
+                <h6 className="title">{t("сontact")}</h6>
                 <ul className="list">
                     <li><a href="tel:+18002345678">+1 (800) 234-5678</a></li>
                     <li><a href="mailto:support@moviego.com">support@flixgo.com</a></li>
