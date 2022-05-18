@@ -17,6 +17,9 @@ main {
     background: transparent;
     color: #ffffff;
     border: none;
+    & img {
+      min-height: 255px;
+    }
   }
 
   & .col-sm-12 {

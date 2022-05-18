@@ -2,17 +2,31 @@ import React from 'react';
 import "./Main.scss"
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import Radium, {StyleRoot} from "radium";
+import {fadeInDown} from "react-animations";
+import {useTranslation} from "react-i18next";
 
 const Main = () => {
+
+    const {t} = useTranslation()
 
     const mainStyle = {
         background: "linear-gradient( rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8) ), url(./images/bg.jpg)"
     };
 
+    const stylesAnimation = {
+        fadeInDown: {
+            animation: 'x 2s',
+            animationName: Radium.keyframes(fadeInDown, 'fadeInDown')
+        }
+    }
+
     return (<div>
        <Header/>
         <main>
-            <h1><span>ТОП НАЙКРАЩИХ </span>ФІЛЬМІВ УСІХ ЧАСІВ ТА НАРОДІВ</h1>
+            <StyleRoot>
+                <h1 style={stylesAnimation.fadeInDown}>{t("title")}</h1>
+            </StyleRoot>
             <section>
                 <div className="row">
                     <div className="col-sm-12 col-md-6">
@@ -22,12 +36,8 @@ const Main = () => {
                                     <img src="./images/1p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
-                                    <h3>Втеча з Шоушенка</h3>
-                                    <p>Цей фільм вже пару десятиліть лідирує в рейтингу IMDb, і поки ще жодній з
-                                        кінострічок не вдалось його обігнати.
-                                        Кіно було зняте ще наприкінці минулого століття. Тут ми побачимо інший бік
-                                        медалі ув’язнених у тюрмах. Зрозуміємо, що люди, які вчинили злочин, попри все
-                                        залишаються людьми.</p>
+                                    <h3>{t("heading Escape from Shaushenko")}</h3>
+                                    <p>{t("text Escape from Shaushenko")}</p>
                                 </div>
                             </div>
                         </div>
@@ -39,12 +49,8 @@ const Main = () => {
                                     <img src="./images/2p.webp" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
-                                    <h3>Хрещений батько</h3>
-                                    <p>Культовий фільм про сицилійську мафіозну сім’ю Корлеоне. Стрічка вдало розкриває
-                                        вплив родини на формування нас як особистості.
-                                        У кримінальній драмі яскраво описуються стосунки, правила та взаємодія злочинних
-                                        банд. А професійна акторська гра заслужено дає друге місце кінострічки в нашому
-                                        топі.</p>
+                                    <h3>{t("heading The Godfather")}</h3>
+                                    <p>{t("text The Godfather")}.</p>
                                 </div>
                             </div>
                         </div>
@@ -60,12 +66,8 @@ const Main = () => {
                                     <img src="./images/3p_.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
-                                    <h3>Список Шиндлера</h3>
-                                    <p>Чорно-білий історичний фільм, який розповідає нам про реальну особистість –
-                                        Оскара Шиндлера. За часів Другої світової війни він врятував від смерті понад
-                                        тисячу польських євреїв.
-                                        Нас занурюють у страшну правду, несправедливість та жорстокість нацизму. Проте
-                                        світ не без добрих людей.</p>
+                                    <h3>{t("heading Schindler's list")}</h3>
+                                    <p>{t("text Schindler's list")}</p>
                                 </div>
                             </div>
                         </div>
@@ -77,12 +79,8 @@ const Main = () => {
                                     <img src="./images/4p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
-                                    <h3>Кримінальне чтиво</h3>
-                                    <p>Легендарний фільм Квентіна Тарантино, який зробив відомим Уму Турман та Джона
-                                        Траволту. Хто ж не бачив їхнього славнозвісного танцю?
-                                        Фільм про кримінал, який вважають важливою віхою в історії кінематографа.
-                                        Саме після цієї стрічки розпочався активний розвиток американського незалежного
-                                        кіно.</p>
+                                    <h3>{t("heading Criminal reading")}</h3>
+                                    <p>{t("text Criminal reading")}</p>
                                 </div>
                             </div>
                         </div>
@@ -94,11 +92,8 @@ const Main = () => {
                                     <img src="./images/5p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
-                                    <h3>Володар перснів: Хранителі Персня</h3>
-                                    <p>Новозедандська фантастична екранізація книги Джона Толкіна. Дія кінострічки
-                                        відбувається в Середзем’ї, де проходить боротьба за Перстень Влади.
-                                        Випадковим чином він потрапив до гобіта Більбо Торбина, який передав його своєму
-                                        племіннику Фродо..</p>
+                                    <h3>{t("heading The Lord of the Rings")}</h3>
+                                    <p>{t("text The Lord of the Rings")}.</p>
                                 </div>
                             </div>
                         </div>
@@ -110,14 +105,8 @@ const Main = () => {
                                     <img src="./images/6p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
-                                    <h3>Бійцівський клуб</h3>
-                                    <p>Фільм знятий за однойменною книгою Чака Паланіка, яка стала світовим бестселером.
-                                        Режисер Девід Фінчер охарактеризував стрічку як чорну комедію з елементами
-                                        соціальної сатири.
-
-                                        На перший погляд, це абсолютно незрозумілий та безсенсовий фільм. Проте, якщо
-                                        вдуматись, він розкриває конфлікт молоді та систему цінностей сучасного
-                                        суспільства.</p>
+                                    <h3>{t("heading Fight Club")}</h3>
+                                    <p>{t("text Fight Club")}</p>
                                 </div>
                             </div>
                         </div>
@@ -133,15 +122,8 @@ const Main = () => {
                                     <img src="./images/7p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
-                                    <h3>Форрест Ґамп</h3>
-                                    <p>Найуспішніший та найвідоміший фільм режисера Роберта Земекіса, який 1994 року
-                                        отримав 6 премій Оскар.
-
-                                        Стрічка чудово ілюструє, що наш успіхзнаходиться у нашій голові, і не важливо,
-                                        що думають інші.
-
-                                        Форест Ґамп був розумово відсталим, але це не завадило йому здійснити воєнний
-                                        подвиг, вплинути на американську політику та досягти своєї мрії.</p>
+                                    <h3>{t("heading Forrest Gamp")}</h3>
+                                    <p>{t("text Forrest Gamp")}</p>
                                 </div>
                             </div>
                         </div>
@@ -153,13 +135,8 @@ const Main = () => {
                                     <img src="./images/8p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
-                                    <h3>Початок</h3>
-                                    <p>Наші сни – це невідоме й абсолютно відоме для нас водночас. Парадокс, але це
-                                        правда. Читаючи свої сновидіння, не забувайте, що ви заглядаєте у своє
-                                        підсвідоме.
-
-                                        Так і головні герої фільму розбирались у своїй голові. Вони знайшли спосіб
-                                        керувати снами та змінювати за допомогою них реальність..</p>
+                                    <h3>{t("heading Beginning")}</h3>
+                                    <p>{t("text Beginning")}</p>
                                 </div>
                             </div>
                         </div>
@@ -171,11 +148,8 @@ const Main = () => {
                                     <img src="./images/9p.webp" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
-                                    <h3>Матриця</h3>
-                                    <p>Свого часу цей фільм отримав значний суспільний резонанс. Все тому, що саме з
-                                        цієї кінострічки розпочалась нова епоха фантастики, графіки та спецефектів.
-                                        Нам змогли показати, що фільм може дивувати, на перший погляд, абсолютно
-                                        нереальною картинкою.</p>
+                                    <h3>{t("heading Matrix")}</h3>
+                                    <p>{t("text Matrix")}</p>
                                 </div>
                             </div>
                         </div>
@@ -187,12 +161,8 @@ const Main = () => {
                                     <img src="./images/10p.jpg" alt="test61"/>
                                 </div>
                                 <div className="col-sm-12 col-xl-6">
-                                    <h3>Паразити</h3>
-                                    <p>Цьогоріч корейський фільм Паразити став проривом на Міжнародному кінофестивалі
-                                        Оскар. І не дивно.
-
-                                        Ця стрічка ніби поєднує в собі всі можливі жанри. Тут є і комедія, і триллер, і
-                                        драма, і кримінал, і навіть трохи жахів.</p>
+                                    <h3>{t("heading Vermin")}</h3>
+                                    <p>{t("text Vermin")}</p>
                                 </div>
                             </div>
                         </div>
@@ -202,12 +172,10 @@ const Main = () => {
             <section className="partners">
                 <div className="row">
                     <div className="col-12">
-                        <h2>Наші партнери</h2>
+                        <h2>{t("partners")}</h2>
                     </div>
-
                     <div className="col-12">
-                        <p>Ось актуальний перелік наших партнерів і сфер компетентності, однак ми завжди відкриті до
-                            нових сміливих починань і взаємин, які допоможуть вдосконалити досвід наших клієнтів.</p>
+                        <p>{t("text partners")}</p>
                     </div>
                     <div className="col-6 col-sm-2 col-md-3 col-lg-2">
                         <a href="test5" className="partner">
