@@ -4,8 +4,6 @@ import translationEN from "./locales/en/translation.json"
 import translationUA from "./locales/ua/translation.json"
 import {initReactI18next} from "react-i18next";
 
-
-
 const resources = {
     en: {
         translation: translationEN
@@ -14,7 +12,6 @@ const resources = {
         translation: translationUA
     }
 }
-
 
 i18n
     .use(LanguageDetector)
@@ -29,6 +26,5 @@ i18n
             escapeValue: false
         }
     });
-
 
 export default i18n;

@@ -96,10 +96,6 @@ const Catalog = () => {
 
 Catalog.prototype = {
     responseCatalog: PropTypes.shape({
-        Poster: PropTypes.string,
-        Title: PropTypes.string,
-        Type: PropTypes.string,
-        Year: PropTypes.string,
         imdbID: PropTypes.string
     })
 }

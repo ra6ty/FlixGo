@@ -23,8 +23,8 @@ const Header = () => {
         <header>
             <a className="logo" href="/"><img src="/images/logo.svg" alt="#"/></a>
             <div className="menu">
-                <Link to={`/`} className='link' type="button">{t("home button")}</Link>
-                <Link to={`/catalog`} className='link' type="button">{t("catalog")}</Link>
+                <Link to="/" className='link' type="button">{t("home button")}</Link>
+                <Link to="/catalog" className='link' type="button">{t("catalog")}</Link>
             </div>
             <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">

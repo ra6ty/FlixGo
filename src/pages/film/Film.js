@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import {useTranslation} from "react-i18next";
 
 const Film = () => {
-    let [responseFilm, setResponseFilm] = useState('')
+    let [responseFilm, setResponseFilm] = useState([])
     const [loading, setLoading] = useState(false)
     const params = useParams()
     const {t} = useTranslation()
