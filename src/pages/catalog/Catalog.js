@@ -11,7 +11,6 @@ import Loader from "../../components/loader/Loader";
 import PropTypes from 'prop-types'
 import {useTranslation} from "react-i18next";
 
-
 const Catalog = () => {
     const [inputVal, setInputVal] = useState("")
     let [responseCatalog, setResponseCatalog] = useState([])
@@ -94,7 +93,7 @@ const Catalog = () => {
     );
 };
 
-Catalog.prototype = {
+Catalog.propTypes = {
     responseCatalog: PropTypes.shape({
         imdbID: PropTypes.string
     })

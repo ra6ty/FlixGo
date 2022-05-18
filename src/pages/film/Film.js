@@ -69,8 +69,7 @@ const Film = () => {
     );
 };
 
-
-Film.prototype={
+Film.propTypes ={
     responseFilm:PropTypes.shape({
         Poster:PropTypes.string,
         Title:PropTypes.string,

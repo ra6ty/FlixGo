@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
 
-
 const ContainerItem = ({film}) => {
     return (
         <div className="col-6 col-sm-4 col-lg-3 col-xl-2">
@@ -19,7 +18,7 @@ const ContainerItem = ({film}) => {
     );
 };
 
-ContainerItem.prototype = {
+ContainerItem.propTypes = {
     film: PropTypes.shape({
         Poster: PropTypes.string,
         Title: PropTypes.string,
