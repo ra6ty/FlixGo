@@ -21,7 +21,7 @@ const Header = () => {
 
     return (
         <header>
-            <a className="logo" href="/"><img src="/images/logo.svg" alt="#"/></a>
+            <Link className="logo" to="/"><img src="/images/logo.svg" alt="#"/></Link>
             <div className="menu">
                 <Link to="/" className='link' type="button">{t("home button")}</Link>
                 <Link to="/catalog" className='link' type="button">{t("catalog")}</Link>
